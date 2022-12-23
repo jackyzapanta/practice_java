@@ -13,7 +13,7 @@ public class BarkingDog {
         boolean isDogbarking = false;
         if (barking)
         {
-            if  ((hourOfDay > -1 && hourOfDay < 8) || (hourOfDay > 22 && hourOfDay < 24) )  {
+            if  ((hourOfDay > -1 && hourOfDay < 8) || hourOfDay == 23 )  {
                 isDogbarking = true;
             }
         }
