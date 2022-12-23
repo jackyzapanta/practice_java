@@ -4,22 +4,22 @@ public class Main {
         displayHighScorePosition("Jacky",
                 displayHighScorePosition(1500));
 
-        displayHighScorePosition("Jacky",
+        displayHighScorePosition("Jenny",
                 displayHighScorePosition(1000));
 
-        displayHighScorePosition("Jacky",
+        displayHighScorePosition("James",
                 displayHighScorePosition(500));
 
-        displayHighScorePosition("Jacky",
+        displayHighScorePosition("Jones",
                 displayHighScorePosition(100));
 
-        displayHighScorePosition("Jacky",
+        displayHighScorePosition("Jackie",
                 displayHighScorePosition(25));
     }
 
     public static  void displayHighScorePosition(String playerName, int position) {
-        System.out.println(playerName + "managed to get into position " +
-                position + "on the high score list");
+        System.out.println(playerName + " managed to get into position " +
+                position + " on the high score list");
     }
 
     public static int displayHighScorePosition(int playerScore){
