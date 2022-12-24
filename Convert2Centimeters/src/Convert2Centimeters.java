@@ -10,7 +10,10 @@ public class Convert2Centimeters {
     }
 
     public  static  double convertToCentimeters(int valueFeet, int valueInches) {
-        return convertToCentimeters((valueFeet * 12) + valueInches);
+        double convertedValue = (double) (valueFeet * 12) + valueInches;
+        return convertToCentimeters((int)convertedValue);
+        //another way
+        //return convertToCentimeters((valueFeet * 12) + valueInches);
     }
 
 }
