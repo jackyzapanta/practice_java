@@ -2,6 +2,8 @@ public class SecondsandMinutes {
 
     public static void main(String[] args) {
         System.out.println(getDurationString(9020));
+        System.out.println(getDurationString(-65, 45));
+        System.out.println(getDurationString(65, 145));
     }
 
     public  static String getDurationString(int seconds) {
@@ -16,7 +18,7 @@ public class SecondsandMinutes {
 
     public  static String getDurationString(int minutes, int seconds) {
         String message = "Invalid input";
-        if (minutes >= 0 && seconds >=0) {
+        if (minutes >= 0 && seconds >=0 && seconds % 60 <= 59) {
             int hrs = minutes / 60;
             int min = minutes % 60;
             int sec = seconds % 60;
